@@ -1,0 +1,6 @@
+<h1><%= @superhero.name %></h1>
+<p>power: <%= @superhero.power %></p>
+<p>power_level:<%= "💪 " *  @superhero.power_level %></p>
+<p><%= @superhero.good ? "This superhero is good" : "This superhero is evil" %></p>
+<%= button_to "Edit #{@superhero.name}", edit_superhero_path(@superhero), method: :get %>
+<%= button_to "Delete #{@superhero.name}", @superhero, method: :delete %>
