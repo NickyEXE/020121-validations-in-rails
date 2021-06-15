@@ -1,10 +1,10 @@
-class CreateSuperheros < ActiveRecord::Migration[6.1]
+class CreateVillains < ActiveRecord::Migration[6.1]
   def change
-    create_table :superheros do |t|
+    create_table :villains do |t|
       t.string :name
       t.string :power
+      t.string :adversary
       t.integer :power_level
-      t.boolean :good
 
       t.timestamps
     end
